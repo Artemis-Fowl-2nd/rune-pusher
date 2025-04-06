@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpux7s5bdo8rf"]
+
+[ext_resource type="Script" path="res://Scripts/door.gd" id="1_hm742"]
+[ext_resource type="Texture2D" uid="uid://bc0ssla4pnjpj" path="res://Sprites/objects/gate.png" id="2_lxbgg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6bw5"]
+size = Vector2(208, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dro0t"]
+atlas = ExtResource("2_lxbgg")
+region = Rect2(48, 16, 224, 128)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_hm742")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_n6bw5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_dro0t")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
