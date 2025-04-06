@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://tr500wc11xyo"]
 
 [ext_resource type="Script" path="res://Scripts/npc_animation.gd" id="1_esw2p"]
-[ext_resource type="Script" path="res://Scripts/npc_dialogue_1.gd" id="2_x65qo"]
+[ext_resource type="Script" path="res://Scripts/npc_dialogue.gd" id="2_ahlsv"]
 [ext_resource type="Theme" uid="uid://c7v8yvhp2wyqo" path="res://Tres/game_theme.tres" id="3_llrme"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_ibprb"]
 [ext_resource type="Resource" uid="uid://dplknq2xgty3i" path="res://Dialog/NPC_level3.tres" id="5_j8ecf"]
@@ -73,7 +73,7 @@ position = Vector2(1, -0.5)
 shape = SubResource("RectangleShape2D_xiwtc")
 
 [node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("2_x65qo")
+script = ExtResource("2_ahlsv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1, -1)
