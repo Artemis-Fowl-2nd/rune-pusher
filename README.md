@@ -6,7 +6,7 @@ Rune Pusher is a simple block pushing puzzle game, with cute interactable NPC’
 
 Rune Pusher was developed in Godot 4, with the art made in Aseprite.
 
-Our global save system was made with the godot plugin “sqlite,” which interacts with firebase to save the data of the level.
+Our global save system was made with the godot plugin godotsqlite, which accesses a sqlite database. 
 
 
 # Collaborators
